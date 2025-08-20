@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Recipe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="recipe-card">
+    <h1 class="recipe-title">Chocolate Cake</h1>
+    <img src="chocolate.png" alt="Chocolate Cake" class="recipe-img">
+
+    <div class="info">
+      <p><strong>Prep Time:</strong> <span id="prepTime">45</span> mins</p>
+      <p><strong>Servings:</strong> 4</p>
+    </div>
+    <button id="toggleIngredients" class="btn">Show Ingredients</button>
+    <ul id="ingredients" class="ingredients hidden">
+      <li>2 cups flour</li>
+      <li>1 ½ cups sugar</li>
+      <li>¾ cup cocoa powder</li>
+      <li>2 tsp baking powder</li>
+      <li>½ tsp salt</li>
+      <li>1 cup milk</li>
+      <li>2 eggs</li>
+      <li>½ cup vegetable oil</li>
+      <li>1 tsp vanilla extract</li>
+    </ul>
+
+    <button id="toggleSteps" class="btn">Show Steps</button>
+    <ol id="steps" class="steps hidden">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix flour, sugar, cocoa, baking powder, and salt.</li>
+      <li>Add milk, eggs, oil, and vanilla. Stir until smooth.</li>
+      <li>Pour batter into greased baking pan.</li>
+      <li>Bake for 35 minutes. Let cool before serving.</li>
+    </ol>
+
+      <button id="startCooking" class="btn primary">Start Cooking</button>
+      <button id="nextStep" class="btn secondary hidden">Next</button>
+
+    <div id="timer" class="timer hidden">Time Left: <span id="timeLeft"></span></div>
+
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+  </div>
+
+<div id="completionModal" class="modal hidden">
+    <div class="modal-content">
+      <p>Recipe Completed! Enjoy your Chocolate Cake</p>
+      <button id="closeModal" class="close-btn">Close</button>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
